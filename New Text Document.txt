@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int countdomino=0;
+        int count=0;
+        Scanner s1=new Scanner(System.in);
+ 
+        int a=s1.nextInt();
+        int b=s1.nextInt();
+        int board=a*b;
+        int domino=1*2;
+        if (board%domino==0){
+            countdomino=board/2;
+            System.out.println(countdomino);
+        }
+        else{
+            while(board>1)
+            {
+                board=board-2;
+                if(board>0)
+                {
+                    count++;
+                }
+            }
+            System.out.println(count);
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    }
+}
